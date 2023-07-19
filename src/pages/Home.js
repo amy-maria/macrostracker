@@ -7,9 +7,13 @@ export default function Home() {
       <div className='Home-date'>
         <Today />
       </div>
-      <div className='Home-meal'>Daily Meal</div>
-      <div className='Home-water'>Daily Water</div>
-      <div className='Home-prgress_bar'>Daily Progress</div>
+      <div className='Home-meal'>
+        Record Daily Meals<button>Daily Meals</button>
+      </div>
+      <div className='Home-water'>
+        Record Water <button>Water</button>
+      </div>
+
       <div className='Home-footer'>Built by Amy Rowell</div>
     </div>
   );

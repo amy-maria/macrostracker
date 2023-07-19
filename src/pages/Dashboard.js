@@ -1,7 +1,3 @@
-import React from 'react';
-
-function Dashboard() {
-  return <div>Dashboard</div>;
+export default function Dashboard() {
+  return `7 Day Progress`;
 }
-
-export default Dashboard;
