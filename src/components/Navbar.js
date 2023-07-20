@@ -16,11 +16,6 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to='./pages/MealForm.js' className='Navbar-recordMeals-link'>
-            Record Meals
-          </Link>
-        </li>
-        <li>
           <Link
             to='./pages/Dashboard.js'
             className='Navbar-weeklyDashboard_link'>

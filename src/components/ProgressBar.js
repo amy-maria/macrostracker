@@ -1,32 +1,34 @@
 import React from 'react';
 
-const ProgressBar = (bgcolor, progress, height) => {
-  const Parentdiv = {
-    height: height,
+const ProgressBar = (props) => {
+  const { bgcolor, completed } = props;
+
+  const containerStyles = {
+    height: 20,
     width: '100%',
-    backgroundColor: 'whitesmoke',
-    borderRadius: 40,
+    backgroundColor: '#e0e0de',
+    borderRadius: 50,
     margin: 50,
   };
 
-  const Childdiv = {
+  const fillerStyles = {
     height: '100%',
-    width: `${progress}%`,
+    width: `${completed}%`,
     backgroundColor: bgcolor,
-    borderRadius: 40,
+    borderRadius: 'inherit',
     textAlign: 'right',
   };
 
-  const progresstext = {
-    padding: 10,
-    color: 'black',
-    fontWeight: 900,
+  const labelStyles = {
+    padding: 5,
+    color: 'white',
+    fontWeight: 'bold',
   };
 
   return (
-    <div style={Parentdiv}>
-      <div style={Childdiv}>
-        <span style={progresstext}>{`${progress}%`}</span>
+    <div style={containerStyles}>
+      <div style={fillerStyles}>
+        <span style={labelStyles}>{`${completed}%`}</span>
       </div>
     </div>
   );
